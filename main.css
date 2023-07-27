@@ -89,7 +89,6 @@ form {
   height: 100px;
   background-image: url(./images/day.jpg);
   background-size: contain;
-  background-color: gray;
   border-radius: 50px;
   transition: background-image 0.7s ease;
 }
