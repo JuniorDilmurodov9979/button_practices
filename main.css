@@ -1,0 +1,110 @@
+/* VARIABLES */
+
+/* :root {
+  --main-color: #ca2525;
+} */
+
+* {
+  box-sizing: border-box;
+}
+/* GENERAL */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+img {
+  display: block;
+  height: auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: --, "Arial", sans-serif;
+  background-color: #fff;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main {
+  flex-grow: 1;
+}
+form {
+  padding-top: 200px;
+  padding-left: 400px;
+  margin-bottom: 50px;
+}
+
+/* Swich button start */
+
+.swich-input {
+  display: none;
+}
+
+.swich-input:checked + .swich-controller {
+  background-image: url(./images/night.jpg);
+  background-size: contain;
+  background-color: green;
+}
+
+.swich-input:checked + .swich-controller::before {
+  left: 205px;
+}
+
+.swich-controller {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  background-image: url(./images/day.jpg);
+  background-size: contain;
+  background-color: gray;
+  border-radius: 50px;
+  transition: background-image 0.7s ease;
+}
+
+.swich-controller::before {
+  /* display: block; */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: left 0.7s ease;
+  content: "";
+}
