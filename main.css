@@ -76,7 +76,6 @@ form {
 .swich-input:checked + .swich-controller {
   background-image: url(./images/night.jpg);
   background-size: contain;
-  background-color: green;
 }
 
 .swich-input:checked + .swich-controller::before {
